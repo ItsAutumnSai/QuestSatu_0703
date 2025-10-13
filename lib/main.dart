@@ -7,11 +7,10 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'QuestSatu_0703',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
@@ -26,23 +25,18 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("HomePage")),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            "Nama: Sultan Arya I.",
-            style: TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.bold,
-              color: Colors.amber[300],
-            ),
-          ),
-          Text("Kelas: IF-5B"),
-          Text("Alamat: Solo"),
-          Text("No. Telp: 082233445566"),
-          Text("Email: abc@gmail.com"),
-        ],
+      body: Center(
+        //gunakan center widget sehingga child widget secara horizontal ditengah
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center, //vertical centering
+          children: [
+            Text("Nama: Sultan A. I."),
+            Text("Kelas: IF-5B"),
+            Text("Alamat: Solo"),
+            Text("No. Telp: 082233445566"),
+            Text("Email: abc@gmail.com"),
+          ],
+        ),
       ),
     );
   }
