@@ -29,6 +29,7 @@ class HomePage extends StatelessWidget {
         //gunakan center widget sehingga child widget secara horizontal ditengah
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center, //vertical centering
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CircleAvatar(
               radius: 100,
