@@ -30,11 +30,19 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center, //vertical centering
           children: [
-            Text("Nama: Sultan A. I."),
-            Text("Kelas: IF-5B"),
-            Text("Alamat: Solo"),
-            Text("No. Telp: 082233445566"),
-            Text("Email: abc@gmail.com"),
+            Text(
+              "Nama: Sultan A. I.",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+                color: Colors.amber[300],
+              ),
+            ),
+            Text("Kelas: IF-5B", style: TextStyle(fontSize: 15)),
+            Text("NIM: 3012310703", style: TextStyle(fontSize: 15)),
+            Text("Alamat: Surakarta", style: TextStyle(fontSize: 15)),
+            Text("Semester: 5", style: TextStyle(fontSize: 15)),
           ],
         ),
       ),
