@@ -30,9 +30,12 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center, //vertical centering
           children: [
+            CircleAvatar(
+              radius: 100,
+              backgroundImage: AssetImage('assets/images/sultan pic.jpg'),
+            ),
             Text(
               "Nama: Sultan A. I.",
-              textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
