@@ -34,12 +34,13 @@ class HomePage extends StatelessWidget {
               radius: 100,
               backgroundImage: AssetImage('assets/images/sultan pic.jpg'),
             ),
+            SizedBox(height: 20), // Add vertical space
             Text(
               "Nama: Sultan A. I.",
               style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
-                color: Colors.amber[300],
+                color: Colors.blue[900],
               ),
             ),
             Text("Kelas: IF-5B", style: TextStyle(fontSize: 15)),
