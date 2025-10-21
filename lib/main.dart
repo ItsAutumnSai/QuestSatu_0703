@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+<<<<<<< Updated upstream
+=======
+import 'package:project_pertama/login_screen.dart';
+import 'package:project_pertama/register_screen.dart';
+import 'container_page.dart';
+>>>>>>> Stashed changes
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +20,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
+<<<<<<< Updated upstream
       home: const HomePage(),
+=======
+      home: LoginScreen(),
+>>>>>>> Stashed changes
     );
   }
 }
