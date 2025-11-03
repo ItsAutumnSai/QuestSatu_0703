@@ -3,13 +3,11 @@ import 'package:project_pertama/main.dart';
 import 'package:project_pertama/register_screen.dart';
 
 class HomeScreen extends StatefulWidget {
-  final String nama;
-  const HomeScreen({super.key, this.nama = "Default"});
+  const HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
-
 class _HomeScreenState extends State<HomeScreen> {
   final _nomorTelpController = TextEditingController();
   final List<String> daftarNomorTelp = [];
@@ -17,14 +15,29 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        elevation: 2,
+        centerTitle: true,
+        title: Text("Persib App", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold), textAlign: TextAlign.center,),
+        backgroundColor: Colors.blue[500],
+        leading: Padding(padding: const EdgeInsets.only(left:8), child: Image.asset('assets/images/Logo_Persib_Bandung.png')),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.settings, color: Colors.white,),
+            onPressed: () {
+              print("Settings");
+            },
+          ),
+        ],
+      ),
       body: SafeArea(
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(18.0),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Halo, ${widget.nama}"),
+                Text("Jadwal Pertandingan Persib Bandung", style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
                 Form(
                   key: _globalKey,
                   child: Row(
